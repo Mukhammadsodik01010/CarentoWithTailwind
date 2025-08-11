@@ -16,6 +16,7 @@ import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 import SearchIcon from "@mui/icons-material/Search";
 import BrowseByTypeComp from "./pages/browseByType";
 import MostSearchedvehiclesComp from "./pages/mostSearchedvehicles";
+import RentalSystemComp from "./pages/rentalSystem";
 
 
 const HomeComp = () => {
@@ -293,7 +294,9 @@ const HomeComp = () => {
       <BrowseByTypeComp />
       <hr className="h-1 text-gray-300" />
       {/* Most Searched vehicles Comp */}
-      <MostSearchedvehiclesComp/>
+      <MostSearchedvehiclesComp />
+      {/* rental system */}
+      <RentalSystemComp />
       {/* Footer */}
       <FooterComp />
     </div>
