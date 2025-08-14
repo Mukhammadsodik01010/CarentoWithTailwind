@@ -17,11 +17,21 @@ import SearchIcon from "@mui/icons-material/Search";
 import BrowseByTypeComp from "./pages/browseByType";
 import MostSearchedvehiclesComp from "./pages/mostSearchedvehicles";
 import RentalSystemComp from "./pages/rentalSystem";
-
+import CarReview from "./pages/carReview";
+import FeaturedListingComp from "./pages/featuredListing";
+import PremiumBrendsComp from "./pages/premiumBrends";
+import AwesomeTeamComp from "./pages/awesomeTeam";
+import ColculatorComp from "./pages/calculator";
+import CommentsComp from "./pages/comments";
+import HowOne from '../assets/mainAssets/howIconOne.svg'
+import HowTwo from '../assets/mainAssets/howIconTwo.svg'
+import HowThree from '../assets/mainAssets/howIconThree.svg'
+import HowFour from "../assets/mainAssets/howIconFour.svg";
+import GooglePlay from "../assets/mainAssets/GooglePlay.svg";
+import AppStore from "../assets/mainAssets/ApppStore.svg";
+import Phone from "../assets/mainAssets/phone.png";
 
 const HomeComp = () => {
-
-
   // carusel right arrow function
   function SampleNextArrow(props) {
     const { onClick } = props;
@@ -39,7 +49,7 @@ const HomeComp = () => {
 
   // carusel left arrow function
   function SamplePrevArrow(props) {
-    const { onClick } = props;   
+    const { onClick } = props;
     return (
       <div className="Container">
         <div
@@ -63,7 +73,6 @@ const HomeComp = () => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
-
 
   return (
     <div>
@@ -297,6 +306,131 @@ const HomeComp = () => {
       <MostSearchedvehiclesComp />
       {/* rental system */}
       <RentalSystemComp />
+      {/* Car reviev */}
+      <CarReview />
+      {/* Statistica fo Global branches */}
+      <div className="Container">
+        <div className="py-10 bg-blue-100 rounded-xl mb-20 w-full grid gap-10 grid-cols-2 sm:grid-cols-3  md:grid-cols-5 place-items-center">
+          <div className="w-25 flex flex-col gap-2 items-start justify-center">
+            <h3 className="text-3xl font-extrabold">45+</h3>
+            <p className="text-base font-bold">Global Branches</p>
+          </div>
+          <div className="w-25 flex flex-col gap-2 items-start justify-center">
+            <h3 className="text-3xl font-extrabold">29K</h3>
+            <p className="text-base font-bold">Destinations Collaboration</p>
+          </div>
+          <div className="w-25 flex flex-col gap-2 items-start justify-center">
+            <h3 className="text-3xl font-extrabold">20+</h3>
+            <p className="text-base font-bold">Years Experience</p>
+          </div>
+          <div className="w-25 flex flex-col gap-2 items-start justify-center">
+            <h3 className="text-3xl font-extrabold">168K</h3>
+            <p className="text-base font-bold">Happy Customers</p>
+          </div>
+          <div className="w-25 flex flex-col gap-2 items-start justify-center">
+            <h3 className="text-3xl font-extrabold">15M</h3>
+            <p className="text-base font-bold">User Accounts</p>
+          </div>
+        </div>
+      </div>
+      {/* Featured Listing */}
+      <FeaturedListingComp />
+      {/* premium brends */}
+      <PremiumBrendsComp />
+      {/* Agents */}
+      <AwesomeTeamComp />
+      {/* Colculator Section */}
+      <div className="bg-gray-600 font-[urbanist]">
+        <div className="Container">
+          <div className="flex gap-5 items-center justify-between py-10">
+            <div className="w-full flex items-center justify-center">
+              <ColculatorComp />
+            </div>
+            <div className="w-full hidden  lg:flex flex-col gap-8 py-40">
+              <h1 className="text-5xl font-extrabold text-white">
+                Want to Calculate <br /> Your Car Payment?
+              </h1>
+              <p className="text-lg font-bold text-white">
+                Match with up to 4 lenders to get the lowest rate <br />{" "}
+                available with no markups, no fees, and no obligations.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Comppents component */}
+      <CommentsComp />
+      {/* how it works Component */}
+      <div className="Container">
+        <div className="font-[urbanist] my-20">
+          <p className="text-lg font-light text-gray-400 text-center">
+            HOW IT WORKS
+          </p>
+          <h1 className="text-4xl font-bold text-center">
+            Presenting Your New <br /> Go-To Car Rental Experience
+          </h1>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 place-items-center">
+            <div className="flex flex-col items-center justify-center gap-2 w-55 h-50 p-5">
+              <img src={HowOne} alt="HowOne" />
+              <h4 className="text-xl font-bold">Choose a Location</h4>
+              <p className="text-sm font-light text-gray-400">
+                Select the ideal destination to begin your journey with ease
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2 w-55 h-50 p-5">
+              <img src={HowOne} alt="HowOne" />
+              <h4 className="text-xl font-bold">Choose a Location</h4>
+              <p className="text-sm font-light text-gray-400">
+                Select the ideal destination to begin your journey with ease
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2 w-55 h-50 p-5">
+              <img src={HowOne} alt="HowOne" />
+              <h4 className="text-xl font-bold">Choose a Location</h4>
+              <p className="text-sm font-light text-gray-400">
+                Select the ideal destination to begin your journey with ease
+              </p>
+            </div>
+            <div className="flex flex-col items-center justify-center gap-2 w-55 h-50 p-5">
+              <img src={HowOne} alt="HowOne" />
+              <h4 className="text-xl font-bold">Choose a Location</h4>
+              <p className="text-sm font-light text-gray-400">
+                Select the ideal destination to begin your journey with ease
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Download app part */}
+      <div className="bg-gray-200 font-[urbanist] pt-20">
+        <div className="Container">
+          <div className="flex gap-10 ">
+            <div className="flex-1/2 flex flex-col items-center lg:items-baseline pl-0 gap-4 lg:pl-40 pb-5">
+              <p className="text-white bg-green-500 text-xl font-light w-40 flex items-center justify-center px-3 py-2 rounded-lg">
+                Download App
+              </p>
+              <h1 className="text-3xl font-bold">
+                Get 15% off when <br /> ordering on the App
+              </h1>
+              <p className="text-xl font-light text-gray-400">
+                Manage all your car rentals on the go <br /> with the Carento
+                app
+              </p>
+              <div className="flex flex-col lg:flex-row items-start gap-2">
+                <button className="bg-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-500">
+                  <img src={GooglePlay} alt="GooglePlay" />
+                </button>
+                <button className="bg-black px-4 py-2 rounded-lg cursor-pointer hover:bg-gray-500">
+                  <img src={AppStore} alt="AppStore" />
+                </button>
+              </div>
+            </div>
+            <div className="hidden lg:flex flex-1/2 items-end">
+              <img src={Phone} alt="Phone" />
+            </div>
+          </div>
+        </div>
+      </div>
       {/* Footer */}
       <FooterComp />
     </div>

@@ -47,7 +47,7 @@ const PricingComp = () => {
       <SiteTopComp />
       <NavbarComp />
       <div
-        className="flex flex-col gap-2 justify-center pl-20  bg-cover bg-center bg-no-repeat h-96 w-4/5 max-w-[1600px] mx-auto my-13 rounded-lg"
+        className="flex flex-col gap-2 justify-center pl-20  bg-cover bg-center bg-no-repeat h-96 max-w-[1600px] mx-auto my-13 rounded-lg"
         style={{
           backgroundImage: `url(${PricingHero})`,
         }}

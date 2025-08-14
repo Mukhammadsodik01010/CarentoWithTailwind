@@ -234,6 +234,7 @@ const NavbarComp = () => {
             </a>
           </div>
         </div>
+        {/* navbar right end */}
         <div className="flex-2/8 flex items-center gap-3 justify-end">
           <Link to={"/sign-in"}>
             <div className="flex  items-center gap-1 cursor-pointer hover:text-green-500">
