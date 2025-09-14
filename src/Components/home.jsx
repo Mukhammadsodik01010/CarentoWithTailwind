@@ -54,7 +54,7 @@ const HomeComp = () => {
       <div className="Container">
         <div
           onClick={onClick}
-          className="h-10 w-10 rounded-full bg-white flex items-center justify-center z-10 absolute top-135.5 lg:top-175.5 xl:top-156 right-35 cursor-pointer hover:bg-green-500"
+          className="h-10 w-10 rounded-full bg-white flex items-center justify-center z-10 absolute top-135.5 lg:top-175.5 xl:top-155 right-35 cursor-pointer hover:bg-green-500"
         >
           <KeyboardArrowLeftOutlinedIcon fontSize="large" />
         </div>
